@@ -1,0 +1,23 @@
+﻿<Window x:Class="CMCS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CMCS Launcher" Height="320" Width="420">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <TextBlock Text="Contract Monthly Claim System (CMCS)" FontSize="18" FontWeight="Bold" Margin="2"/>
+            <TextBlock Text="Choose an action below to open the corresponding window." Margin="2"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+            <Button x:Name="btnOpenSubmit" Content="Open Submit Claim (Lecturer)" Margin="6" Height="36" Click="BtnOpenSubmit_Click"/>
+            <Button x:Name="btnOpenApprovals" Content="Open Approvals (Coordinator/Manager)" Margin="6" Height="36" Click="BtnOpenApprovals_Click"/>
+            <Button x:Name="btnExit" Content="Exit" Margin="6" Height="32" Click="BtnExit_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
+
